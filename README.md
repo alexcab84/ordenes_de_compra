@@ -71,3 +71,8 @@ Endpoints disponibles:
 	b)  {{base_url}}/ordenes/lista?page=&size=&id_usuario= (Metodo para listar las ordenes de compra por id de usuario) Metodo GET
 	
 		Se incluye una paginacion de resultados, se debe colocar el tamano de la pagina en size y el numero de pagina en page. El Id de usuario en el parametro id_usuario
+		
+	
+## Pruebas Unitarias
+
+En la ruta raiz del proyecto, dirigirse a target/surefire-reports. Alli encontrara la documentacion final de las pruebas unitarias.
