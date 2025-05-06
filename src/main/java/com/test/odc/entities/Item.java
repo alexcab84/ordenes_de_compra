@@ -26,4 +26,10 @@ public class Item {
 	public void setPrecio_unitario(BigDecimal precio_unitario) {
 		this.precio_unitario = precio_unitario;
 	}
+	public Item(String id_producto, int cantidad, BigDecimal precio_unitario) {
+		super();
+		this.id_producto = id_producto;
+		this.cantidad = cantidad;
+		this.precio_unitario = precio_unitario;
+	}
 }
