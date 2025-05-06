@@ -21,6 +21,7 @@ Este proyecto es una API REST desarrollada con Spring Boot que permite la **crea
 ## Requisitos
 
 - Tener instalado Java version mayor a 17
+- Tener instalado Maven (preferiblemente las ultimas versiones, por ejemplo la 3.9.9)
 - Tener instalado y en ejecucion MongoDB
 - Tener instalado y en ejecucion Kafka 4.0
 - Tener instalado y en ejecucion Redis
@@ -37,13 +38,21 @@ Este proyecto es una API REST desarrollada con Spring Boot que permite la **crea
    	- spring.data.mongodb.uri= --> escribir la ruta de conexion a la base de datos MongoDB
    	- spring.kafka.bootstrap-servers= --> escribir la url del servidor kafka, por defecto es localhost:9092
    	
-3. Entrar en la carpeta target donde se encuentra el archivo .jar y ejecutarlo con el siguiente comando desde consola: java -jar ordenes_de_compra.jar
+3. Abrir la terminal o consola (dependiendo de tu Sistema Operativo) y ejecutar el siguiente comando para compilar el proyecto:
+	```bash
+	mvn clean install
+	```
+	
+4. Entrar en la carpeta target donde se encuentra el archivo .jar y ejecutarlo con el siguiente comando desde consola:
+	```bash
+	java -jar ordenes_de_compra.jar
+	```
 
 ## Cómo usarlo?
 
 Endpoints disponibles:
 
-	{{base_url}} es la url del servidor, por ejemplo http://localhost:8080 o un domain personalizado.
+	"{{base_url}}" es la url del servidor, por ejemplo http://localhost:8080 o un domain personalizado.
 
 	a) {{base_url}}/ordenes/crear (metodo para crear las ordenes de compra) Metodo POST
 	
