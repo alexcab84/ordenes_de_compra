@@ -18,10 +18,24 @@ Este proyecto es una API REST desarrollada con Spring Boot que permite la **crea
 - Publicación de eventos a través de Kafka
 - Caché de resultados mediante Redis
 
+## Requisitos
+
+- Tener instalado Java version mayor a 17
+- Tener instalado y en ejecucion MongoDB
+- Tener instalado y en ejecucion Kafka 4.0
+- Tener instalado y en ejecucion Redis
+
 ## Instalación
 
 1. Clonar el repositorio:
 
-   ```bash
-   git clone https://github.com/tuusuario/nombre-del-repositorio.git
-   cd nombre-del-repositorio
+   	```bash
+   	git clone https://github.com/alexcab84/ordenes_de_compra.git
+   	cd ordenes_de_compra
+   	```
+2. Abrir el archivo "application.properties" que se encuentra en la carpeta raiz del proyecto. Se deben modificar los siguientes parametros:
+   	- spring.data.mongodb.uri= --> escribir la ruta de conexion a la base de datos MongoDB
+   	- spring.kafka.bootstrap-servers= --> escribir la url del servidor kafka, por defecto es localhost:9092
+   	
+3. Entrar en la carpeta target donde se encuentra el archivo .jar y ejecutarlo con el siguiente comando desde consola: java -jar ordenes_de_compra.jar
+
