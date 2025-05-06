@@ -39,3 +39,26 @@ Este proyecto es una API REST desarrollada con Spring Boot que permite la **crea
    	
 3. Entrar en la carpeta target donde se encuentra el archivo .jar y ejecutarlo con el siguiente comando desde consola: java -jar ordenes_de_compra.jar
 
+## Cómo usarlo?
+
+Endpoints disponibles:
+
+	{{base_url}} es la url del servidor, por ejemplo http://localhost:8080 o un domain personalizado.
+
+	a) {{base_url}}/ordenes/crear (metodo para crear las ordenes de compra) Metodo POST
+	
+		Ejemplo del jsonBody que se debe enviar:
+		{
+			"idUsuario": "prueba_001",
+			"items": [{
+				"id_producto": "producto_001",
+				"cantidad": 3,
+				"precio_unitario": 4000.00
+			}]
+		}
+		
+		en "items" se puede enviar mas articulos o productos, ya que es una lista de productos.
+		
+	b)  {{base_url}}/ordenes/lista?page=&size=&id_usuario= (Metodo para listar las ordenes de compra por id de usuario) Metodo GET
+	
+		Se incluye una paginacion de resultados, se debe colocar el tamano de la pagina en size y el numero de pagina en page. El Id de usuario en el parametro id_usuario
