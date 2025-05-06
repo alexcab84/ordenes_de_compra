@@ -38,7 +38,7 @@ Este proyecto es una API REST desarrollada con Spring Boot que permite la **crea
    	- spring.data.mongodb.uri= --> escribir la ruta de conexion a la base de datos MongoDB
    	- spring.kafka.bootstrap-servers= --> escribir la url del servidor kafka, por defecto es localhost:9092
    	
-3. Abrir la terminal o consola (dependiendo de tu Sistema Operativo) y ejecutar el siguiente comando para compilar el proyecto:
+3. Abrir la terminal o consola (dependiendo de tu Sistema Operativo) en la ruta raiz del proyecto y ejecutar el siguiente comando para compilar el proyecto:
 	```bash
 	mvn clean install
 	```
